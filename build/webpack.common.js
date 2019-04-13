@@ -8,6 +8,14 @@ module.exports = {
     path: path.resolve(__dirname, '../dist'),
     filename: '[name].bundle.js'
   },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        loader: ['babel-loader']
+      }
+    ]
+  },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({

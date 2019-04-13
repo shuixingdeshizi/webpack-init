@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --config ./build/webpack.dev.js",
-    "build": "webpack --config ./build/webpack.prod.js"
+    "start": "node ./build/webpack.dev.js",
+    "build": "node ./build/webpack.prod.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-loader": "^8.0.5",
     "clean-webpack-plugin": "^2.0.1",
     "html-webpack-plugin": "^3.2.0",
     "uglifyjs-webpack-plugin": "^2.1.2",
